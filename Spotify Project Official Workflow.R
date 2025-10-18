@@ -1,3 +1,4 @@
+#In this file, we develop a 50-250 user dataset which shows users most listened to songs, their playcount, and artist metadata
 
 library(httr)
 library(jsonlite)
