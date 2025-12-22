@@ -3,8 +3,8 @@
 library(httr)
 library(jsonlite)
 
-api_key <- "ca129e73725aab6fa33e0be24ef1148c"
-api_secret <- "45ccaa3f8f0f2f0ebf44384735d8a58d"
+api_key <- "your_api"
+api_secret <- "your_api_secret"
 url <- "https://www.last.fm/music/Drake/+listeners"
 
 library(rvest)
