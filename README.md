@@ -4,15 +4,23 @@ We first generate a dataset, by webscraping sites like LastFM, to gather user da
    #The dataset will be of popular artists based on the LastFM Website
   
 We then extract user's top 10 favorite songs from the most famous artists, and analyze those tracks
-These tracks can be analyzed, using Spotfy's api to extract audio features such as "Tempo" or "Danceability"
-Using K clustering, we define user groups such as "Upbeat/Exciting" or "Mellow/Slow" based on the audio feature data of their top 10 songs
 
-We now have an idea of the type of music users listen to, with data to support it
+Using a spotify like API, these tracks can be analyzed,to extract audio features such as "Tempo" or "Danceability", 10 features total.
 
-With those patterns, we can predict what songs a user may like in the future
- #We can also generate mood playlists for those predicted songs, similar to spotify's ai generated mood playlists
+After garnering a dataset of around 10,000 unique songs, we can create a matrix that contains rows with each song and its respective 10 audio features. After scaling, we can use cosine similarity to determine similarity between these songs.
 
-With enough data, we can ask a person not invovled in the test, what their 10 most listened to songs are (based on spotify data) and get an idea of what songs they may be intersted in, based on what cluster they are in
+After developing a similarity matrix, I went ahead and made a UI using RShiny, comparing any song in the dataset with its 5 closest recomendations.
+
+Additional Analyses were done to further extract information from the music dataset. Sicne this dataset is self made, and entirely webscraped based on recent trends, the dataset can act as a most popular songs of 2025 dataset.
+
+By using a Projection Pursuit plot, we can analyze the most unique songs in the dataset, to get a sense of what the strangest, or most unique songs are in the dataset. This gives us insight into how music tastes have evolved from previous generations to today, as well as, finding out what potential new songs a person may enjoy that are also unique from modern day trends.
+
+By using PCA with K Clustering of music groups, we can also make assumptions on the genres of music most people listen to.
+
+Using K clustering, we define user groups such as "Upbeat/Exciting" or "Mellow/Slow" based on the PCA plot aggregations.
+
+
+
 
 
 
