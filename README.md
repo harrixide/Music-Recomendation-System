@@ -18,7 +18,7 @@ Using a spotify like API, these tracks can be analyzed,to extract audio features
 
 After garnering a dataset of around 10,000 unique songs, we can create a matrix that contains rows with each song and its respective 10 audio features. After scaling, we can use cosine similarity to determine similarity between these songs.
 
-After developing a similarity matrix, I went ahead and made a UI using RShiny, comparing any song in the dataset with its 5 closest recomendations.
+A UI for viewing recomendations to any song in the dataset was made using RShiny, comparing any song in the dataset with its 5 closest recomendations.
 
 Additional Analyses were done to further extract information from the music dataset. Sicne this dataset is self made, and entirely webscraped based on recent trends, the dataset can act as a most popular songs of 2025 dataset.
 
