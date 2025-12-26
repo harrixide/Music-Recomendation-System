@@ -1,3 +1,7 @@
+(Raw and processed data are not stored in this repository due to size.
+Run the scripts in src/data_collection to generate data locally.
+Expected output paths are data/raw and data/processed.)
+
 The Purpose of this Project is to create a functional recomendation system that can recommend niche songs to pre existing users in a dataset.
 
 We first generate a dataset, by webscraping sites like LastFM, to gather user data, and to analyze trends in user behavior
