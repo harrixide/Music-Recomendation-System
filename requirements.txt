@@ -1,1 +1,4 @@
 library(dplyr)
+library(httr)
+library(jsonlite)
+library(rvest)
