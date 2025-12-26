@@ -1,6 +1,11 @@
-(Raw and processed data are not stored in this repository due to size.
+(
+This project uses relative file paths.
+Before running any scripts, ensure your working directory is set to the repository root.
+
+Raw and processed data are not stored in this repository due to size.
 Run the scripts in src/data_collection to generate data locally.
-Expected output paths are data/raw and data/processed.)
+Expected output paths are data/raw and data/processed.
+)
 
 The Purpose of this Project is to create a functional recomendation system that can recommend niche songs to pre existing users in a dataset.
 
